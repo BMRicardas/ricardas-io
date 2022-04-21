@@ -19,34 +19,52 @@ const ExperienceItem: FC<Props> = ({
   workingFrom,
   workingTo,
 }) => {
-  const workingDuration = (a: string, b: string) => {
-    const from = new Date(a);
-    let to;
-    if (b === "present") {
+  const toDateString = (to: string) => {
+    if (to === "present") {
       const today = new Date();
       const year = today.getFullYear();
       const month = today.getMonth() + 1;
-      to = new Date(`${year}.${month >= 10 ? month : `0${month}`}`);
-    } else {
-      to = new Date(b);
+      return `${year}.${month >= 10 ? month : `0${month}`}`;
     }
-    const difference =
-      to.getMonth() -
-      from.getMonth() +
-      12 * (to.getFullYear() - from.getFullYear());
-
-    return +difference;
+    return to;
   };
 
-  const isMonthPlural = () => {
-    const duration = workingDuration(workingFrom, workingTo);
-    if (duration <= 0) {
-      return "0 months";
-    } else if (duration === 1) {
-      return "1 month";
+  const getDifference = (dateFrom: Date, dateTo: Date) => {
+    return (
+      dateTo.getMonth() -
+      dateFrom.getMonth() +
+      12 * (dateTo.getFullYear() - dateFrom.getFullYear())
+    );
+  };
+
+  const getLastDigit = (number: number) => {
+    return Number(number.toString().slice(-1));
+  };
+
+  const getLabel = (difference: number, lastDigit: number) => {
+    if (difference === 0) {
+      return `${difference} months`;
+    } else if (difference < 0 && lastDigit === 1) {
+      return `Are you sure you worked here for ${difference} month? 🤔`;
+    } else if (difference < 0) {
+      return `Are you sure you worked here for ${difference} months? 🤔`;
+    } else if (lastDigit === 1) {
+      return `${difference} month`;
     } else {
-      return `${duration} months`;
+      return `${difference} months`;
     }
+  };
+
+  const getWorkingDuration = (dateFrom: string, dateTo: string) => {
+    const toDate = toDateString(dateTo);
+    const from = new Date(dateFrom);
+    const to = new Date(toDate);
+
+    const difference = getDifference(from, to);
+    const lastDigit = getLastDigit(difference);
+    const label = getLabel(difference, lastDigit);
+
+    return label;
   };
 
   return (
@@ -60,8 +78,7 @@ const ExperienceItem: FC<Props> = ({
             <p>
               {workingFrom} - {workingTo}
             </p>
-            {/* <p>{`${workingDuration(workingFrom, workingTo)} months`}</p> */}
-            <p>{isMonthPlural()}</p>
+            <p>{getWorkingDuration(workingFrom, workingTo)}</p>
           </div>
         </li>
       </Card>

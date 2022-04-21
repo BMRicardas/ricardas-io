@@ -18,7 +18,7 @@ const experiences: Experience[] = [
     company: "Ričardas",
     companyUrl: "https://ricardas.io/",
     position: "Freelance",
-    workingFrom: "2022.03",
+    workingFrom: "2025.07",
     workingTo: "present",
   },
   {
@@ -36,7 +36,7 @@ const experiences: Experience[] = [
     company: "Visma",
     companyUrl: "https://www.visma.lt/",
     position: "Fullstack Developer",
-    workingFrom: "2022.01",
+    workingFrom: "2020.07",
     workingTo: "present",
   },
 ];
