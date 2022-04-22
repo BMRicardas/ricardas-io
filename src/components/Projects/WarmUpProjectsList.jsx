@@ -1,11 +1,11 @@
 import React from "react";
-import WarmUpProjectsItem from "./WarmUpProjectsItem";
+import ProjectsItem from "./ProjectsItem";
 
 const WarmUpProjectsList = () => {
   return (
     <div>
       <h2>Warm Up Project List</h2>
-      <WarmUpProjectsItem />
+      <ProjectsItem />
     </div>
   );
 };
