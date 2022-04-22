@@ -1,0 +1,99 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(238, 238, 238, 0.9),
+      rgba(204, 204, 204, 0.9)
+    ),
+    url(../../assets/clay-banks-8q6e5hu3Ilc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+}
+
+.text-box {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #464646;
+  text-transform: uppercase;
+}
+
+.heading-primary-sup {
+  color: #525252;
+  display: block;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 30px;
+  animation: moveInTop 0.5s;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 18px;
+  animation: moveInRight 1s;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  animation: moveInLeft 1s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

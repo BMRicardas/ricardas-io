@@ -5,12 +5,7 @@ interface Props {
 }
 
 const HomePage: FC<Props> = ({ children }) => {
-  return (
-    <>
-      <h1>Hi, I'm Ričardas</h1>
-      <div>{children}</div>
-    </>
-  );
+  return <div>{children}</div>;
 };
 
 export default HomePage;

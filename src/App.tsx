@@ -4,13 +4,14 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import ContactsList from "./components/Contacts/ContactsList";
 import ExperienceList from "./components/Experience/ExperienceList";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import ProjectsList from "./components/Projects/ProjectsList";
 import WarmUpProjectsList from "./components/Projects/WarmUpProjectsList";
-import HomePage from "./pages/HomePage";
 
 const App: FC = () => {
   return (
-    <HomePage>
+    <>
+      <Header />
       <AboutMe />
       <ExperienceList />
       <WarmUpProjectsList />
@@ -86,7 +87,7 @@ const App: FC = () => {
         amet non voluptatibus veniam, praesentium distinctio doloribus ab? Eum
         nihil eius architecto sapiente similique impedit velit neque mollitia!
       </p>
-    </HomePage>
+    </>
   );
 };
 

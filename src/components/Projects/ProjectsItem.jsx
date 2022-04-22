@@ -8,7 +8,7 @@ const ProjectsItem = () => {
       <div>
         <img
           src="https://getuikit.com/v2/docs/images/placeholder_600x400_2.svg"
-          alt="Sample image"
+          alt="Sample"
         />
         <p></p>
       </div>
