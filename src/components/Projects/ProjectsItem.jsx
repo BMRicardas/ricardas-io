@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../ui/Card/Card";
-import classes from "./ProjectsItem.module.css";
+// import classes from "./ProjectsItem.module.css";
 
 const ProjectsItem = () => {
   return (
