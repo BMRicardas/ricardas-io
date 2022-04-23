@@ -21,55 +21,18 @@ const DUMMY_CONTACTS = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png",
     alt: "My LinkedIn Page",
   },
-  {
-    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png",
-    alt: "My LinkedIn Page",
-  },
-  {
-    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png",
-    alt: "My LinkedIn Page",
-  },
-  {
-    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png",
-    alt: "My LinkedIn Page",
-  },
-  {
-    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png",
-    alt: "My LinkedIn Page",
-  },
-  {
-    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png",
-    alt: "My LinkedIn Page",
-  },
-  {
-    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png",
-    alt: "My LinkedIn Page",
-  },
 ];
 
 const ContactsList = () => {
   return (
     <div>
-      <h3>Need a developer? Contact me!</h3>
-      <div className={classes["contacts-list"]}>
+      <ul className={classes["contacts-list"]}>
         {DUMMY_CONTACTS.map((contact, i) => {
           return (
             <ContactsItem key={i} url={contact.url} logoUrl={contact.logoUrl} />
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 };

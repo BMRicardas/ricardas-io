@@ -3,11 +3,16 @@ import classes from "./ContactsItem.module.css";
 
 const ContactsItem = ({ url, logoUrl, alt }) => {
   return (
-    <div>
-      <a href={url} target="_blank" rel="noopener noreferrer">
+    <li>
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes.btn}
+      >
         <img src={logoUrl} alt={alt} className={classes.image} />
       </a>
-    </div>
+    </li>
   );
 };
 

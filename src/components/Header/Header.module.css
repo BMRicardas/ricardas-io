@@ -31,7 +31,7 @@
   font-size: 50px;
   font-weight: 400;
   letter-spacing: 30px;
-  animation: moveInTop 0.5s;
+  animation: moveInTop ease-in-out 1s;
 }
 
 .heading-primary-main {
@@ -39,7 +39,7 @@
   font-size: 50px;
   font-weight: 400;
   letter-spacing: 18px;
-  animation: moveInRight 1s;
+  animation: moveInRight 1.5s;
 }
 
 .heading-primary-sub {
@@ -47,7 +47,7 @@
   font-size: 50px;
   font-weight: 400;
   letter-spacing: 8px;
-  animation: moveInLeft 1s;
+  animation: moveInLeft 1.5s;
 }
 
 @keyframes moveInLeft {
@@ -57,7 +57,7 @@
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(5px);
   }
 
   100% {
@@ -73,7 +73,7 @@
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-5px);
   }
 
   100% {
@@ -86,10 +86,6 @@
   0% {
     opacity: 0;
     transform: translateY(-100px);
-  }
-
-  80% {
-    transform: translateY(10px);
   }
 
   100% {

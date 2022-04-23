@@ -1,4 +1,5 @@
 import React from "react";
+import ContactsList from "../Contacts/ContactsList";
 import classes from "./Header.module.css";
 
 const Header = () => {
@@ -12,6 +13,7 @@ const Header = () => {
             I'm a web developer
           </span>
         </h1>
+        <ContactsList />
       </div>
     </header>
   );
