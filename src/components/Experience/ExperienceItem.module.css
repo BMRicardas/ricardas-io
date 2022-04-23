@@ -1,7 +1,29 @@
 .item {
-    list-style: none;
+  list-style: none;
 }
 
 .image {
-    width: 200px;
+  width: 200px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #eee;
+  color: #525252;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }

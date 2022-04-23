@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import Card from "../../ui/Card/Card";
 import classes from "./ExperienceItem.module.css";
 
 interface Props {
@@ -68,20 +67,23 @@ const ExperienceItem: FC<Props> = ({
   };
 
   return (
-    <a href={companyUrl} target="_blank" rel="noopener noreferrer">
-      <Card>
-        <li className={classes.item}>
-          <img src={image} alt={company} className={classes.image} />
-          <div>
-            <h3>{position}</h3>
-            <hr />
-            <p>
-              {workingFrom} - {workingTo}
-            </p>
-            <p>{getWorkingDuration(workingFrom, workingTo)}</p>
-          </div>
-        </li>
-      </Card>
+    <a
+      href={companyUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={classes.btn}
+    >
+      <li className={classes.item}>
+        <img src={image} alt={company} className={classes.image} />
+        <div>
+          <h3>{position}</h3>
+          <hr />
+          <p>
+            {workingFrom} - {workingTo}
+          </p>
+          <p>{getWorkingDuration(workingFrom, workingTo)}</p>
+        </div>
+      </li>
     </a>
   );
 };
