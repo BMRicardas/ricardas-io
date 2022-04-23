@@ -14,7 +14,7 @@
 
 .text-box {
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -23,6 +23,7 @@
 .heading-primary {
   color: #464646;
   text-transform: uppercase;
+  margin-bottom: 5rem;
 }
 
 .heading-primary-sup {
