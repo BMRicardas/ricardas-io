@@ -1,8 +1,8 @@
 .card {
   margin: 1rem;
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 14px;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.4rem;
   background-color: white;
   width: fit-content;
   transition: transform 0.1s ease-in;

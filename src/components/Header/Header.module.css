@@ -29,36 +29,36 @@
 .heading-primary-sup {
   color: #525252;
   display: block;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
-  letter-spacing: 30px;
+  letter-spacing: 3rem;
   animation: moveInTop ease-in-out 1s;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
-  letter-spacing: 18px;
+  letter-spacing: 1.8rem;
   animation: moveInRight 1.5s;
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
-  letter-spacing: 8px;
+  letter-spacing: 0.8rem;
   animation: moveInLeft 1.5s;
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(5px);
+    transform: translateX(0.5rem);
   }
 
   100% {
@@ -70,11 +70,11 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-5px);
+    transform: translateX(-0.5rem);
   }
 
   100% {
@@ -86,7 +86,7 @@
 @keyframes moveInTop {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-10rem);
   }
 
   100% {
