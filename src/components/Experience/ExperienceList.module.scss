@@ -1,4 +1,10 @@
+@import "../../styles/";
+
 .experience-list {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+
+  @media only screen and (max-width: $bp-sm) {
+    flex-direction: column;
+  }
 }
