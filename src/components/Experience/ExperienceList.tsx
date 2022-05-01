@@ -35,7 +35,7 @@ const experiences: Experience[] = [
 
 const ExperienceList: FC = () => {
   return (
-    <Section title="Experience? Here you go!">
+    <Section title="Experience">
       <ul className={classes["experience-list"]}>
         {/* <p>{`MONTH${lastDigitIsOne ? "" : "s"}`}</p> */}
         {experiences.map((item, i) => {

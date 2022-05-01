@@ -37,7 +37,7 @@ const AboutMe: FC = () => {
   return (
     <Section title="About Me">
       <div className={classes["about-me__main"]}>
-        <div className={classes["about-me__main--col-1"]}>
+        <div className={classes["about-me__main--col"]}>
           <p>
             Former professional poker player, currently working on a new career
             path. Seeking for an Entry Level/Junior Front-End Developer position
@@ -45,7 +45,7 @@ const AboutMe: FC = () => {
             develop my skills.
           </p>
         </div>
-        <div className={classes["about-me__main--col-2"]}>
+        <div className={classes["about-me__main--col"]}>
           <h3
             className={`${classes["heading-tertiary"]} ${classes["u-margin-bottom-sm"]} ${classes["u-center-text"]}`}
           >
