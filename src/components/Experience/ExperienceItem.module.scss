@@ -1,0 +1,29 @@
+.item {
+  list-style: none;
+}
+
+.image {
+  width: 20rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #eee;
+  color: #525252;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}

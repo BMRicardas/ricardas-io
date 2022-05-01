@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import ExperienceItem from "./ExperienceItem";
-import classes from "./ExperienceList.module.css";
+import classes from "./ExperienceList.module.scss";
 
 interface Experience {
   image: string;

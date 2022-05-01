@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
+@import "../variables/";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; // 10px
+  font-family: "JetBrains Mono", monospace;
+
+  @media only screen and (max-width: $bp-md) {
+    font-size: 50%; // 8px
+  }
+  @media only screen and (max-width: $bp-sm) {
+    font-size: 37.5%; // 6px
+  }
+}
+
+body {
+  box-sizing: border-box;
+  color: hsl(var(--color-text));
+  background: #fafafa;
+}
+
+ol,
+ul {
+  list-style: none;
+}

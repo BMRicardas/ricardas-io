@@ -1,6 +1,6 @@
 import React from "react";
 import ContactsItem from "./ContactsItem";
-import classes from "./ContactsList.module.css";
+import classes from "./ContactsList.module.scss";
 
 const DUMMY_CONTACTS = [
   {

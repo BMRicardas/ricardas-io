@@ -1,0 +1,21 @@
+:root {
+  --color-white: #fff;
+  --color-text: var(--color-gray-15);
+
+  --color-primary-h: 0;
+  --color-primary-s: 0%;
+  --color-primary-l: 93%;
+  --color-primary-a: 93%;
+
+  --color-gray-93: var(--color-primary-h), var(--color-primary-s),
+    var(--color-primary-l);
+
+  // Lower number = darker color
+  --color-gray-85: var(--color-primary-h), var(--color-primary-s), 85%;
+  --color-gray-80: var(--color-primary-h), var(--color-primary-s), 80%;
+  --color-gray-75: var(--color-primary-h), var(--color-primary-s), 75%;
+  --color-gray-70: var(--color-primary-h), var(--color-primary-s), 70%;
+  --color-gray-65: var(--color-primary-h), var(--color-primary-s), 65%;
+  --color-gray-15: var(--color-primary-h), var(--color-primary-s), 15%;
+  --color-gray-10: var(--color-primary-h), var(--color-primary-s), 10%;
+}

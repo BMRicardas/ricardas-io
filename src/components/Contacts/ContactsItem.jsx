@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./ContactsItem.module.css";
+import classes from "./ContactsItem.module.scss";
 
 const ContactsItem = ({ url, logoUrl, alt }) => {
   return (
