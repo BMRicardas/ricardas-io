@@ -11,6 +11,7 @@
     var(--color-primary-l);
 
   // Lower number = darker color
+  --color-gray-95: var(--color-primary-h), var(--color-primary-s), 95%;
   --color-gray-85: var(--color-primary-h), var(--color-primary-s), 85%;
   --color-gray-80: var(--color-primary-h), var(--color-primary-s), 80%;
   --color-gray-75: var(--color-primary-h), var(--color-primary-s), 75%;

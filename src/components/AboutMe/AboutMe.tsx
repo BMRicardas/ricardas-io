@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Section from "../../ui/Section/Section";
 import classes from "./AboutMe.module.scss";
 
 const technologies = [
@@ -34,8 +35,7 @@ const technologies = [
 
 const AboutMe: FC = () => {
   return (
-    <section className={classes["about-me"]}>
-      <h2 className={classes["about-me__title"]}>About me</h2>
+    <Section title="About Me">
       <div className={classes["about-me__main"]}>
         <div className={classes["about-me__main--col-1"]}>
           <p>
@@ -62,7 +62,7 @@ const AboutMe: FC = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

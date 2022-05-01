@@ -1,4 +1,11 @@
 .section {
-  height: 50vh;
-  background-color: #ddd;
+  background-color: hsl(var(--color-gray-95));
+  padding: 25rem 0;
+  margin-top: -12vh;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+    font-size: 5rem;
+  }
 }

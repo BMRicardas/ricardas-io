@@ -2,17 +2,6 @@
 @import "../../styles/variables/";
 
 .about-me {
-  background-color: hsl(var(--color-gray-85));
-  padding: 25rem 0;
-  margin-top: -12vh;
-  display: flex;
-  flex-direction: column;
-
-  &__title {
-    text-align: center;
-    font-size: 5rem;
-  }
-
   &__main {
     margin-top: 2rem;
     font-size: var(--text-size);

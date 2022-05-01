@@ -3,6 +3,9 @@
 .experience-list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
 
   @media only screen and (max-width: $bp-sm) {
     flex-direction: column;

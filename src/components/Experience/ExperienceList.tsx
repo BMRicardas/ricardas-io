@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Section from "../../ui/Section/Section";
 import ExperienceItem from "./ExperienceItem";
 import classes from "./ExperienceList.module.scss";
 
@@ -18,7 +19,7 @@ const experiences: Experience[] = [
     company: "Ričardas",
     companyUrl: "https://ricardas.io/",
     position: "Freelance",
-    workingFrom: "2025.07",
+    workingFrom: "2021.07",
     workingTo: "present",
   },
   {
@@ -30,21 +31,11 @@ const experiences: Experience[] = [
     workingFrom: "2021.10",
     workingTo: "2022.01",
   },
-  {
-    image:
-      "https://resources.mynewsdesk.com/image/upload/b_auto,c_pad,h_628,q_auto:good,w_1200/syd5e1nftde8plfo3ymy.jpg",
-    company: "Visma",
-    companyUrl: "https://www.visma.lt/",
-    position: "Fullstack Developer",
-    workingFrom: "2020.07",
-    workingTo: "present",
-  },
 ];
 
 const ExperienceList: FC = () => {
   return (
-    <div>
-      <h2>Experience? Here you go!</h2>
+    <Section title="Experience? Here you go!">
       <ul className={classes["experience-list"]}>
         {/* <p>{`MONTH${lastDigitIsOne ? "" : "s"}`}</p> */}
         {experiences.map((item, i) => {
@@ -61,7 +52,7 @@ const ExperienceList: FC = () => {
           );
         })}
       </ul>
-    </div>
+    </Section>
   );
 };
 
