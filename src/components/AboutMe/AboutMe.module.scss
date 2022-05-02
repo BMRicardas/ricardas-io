@@ -2,11 +2,12 @@
 @import "../../styles/variables/";
 
 .about-me {
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-primary-1-a),
-    var(--color-primary-0-a)
-  );
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   var(--color-primary-1-a),
+  //   var(--color-primary-0-a)
+  // );
+  background-color: var(--color-primary-0);
   &__main {
     display: flex;
     margin-top: 2rem;
