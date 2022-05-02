@@ -1,5 +1,4 @@
 .section {
-  background-color: hsl(var(--color-gray-95));
   padding: 25rem 0;
   margin-top: -12vh;
   display: flex;
@@ -10,5 +9,7 @@
   &__title {
     text-align: center;
     font-size: 5rem;
+    color: var(--color-primary-4);
+    margin-bottom: 3rem;
   }
 }

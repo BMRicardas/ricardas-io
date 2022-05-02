@@ -3,13 +3,14 @@
 }
 
 .image {
-  width: 20rem;
+  width: 15rem;
 }
 
 .btn:link,
 .btn:visited {
-  background-color: #eee;
-  color: #525252;
+  background-color: var(--color-primary-0);
+  color: var(--color-text);
+  font-size: var(--text-size);
   text-transform: uppercase;
   text-decoration: none;
   padding: 1rem 2rem;

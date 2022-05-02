@@ -1,13 +1,12 @@
 .image {
-  width: 3rem;
-  height: auto;
+  width: 4rem;
 }
 
 .btn {
-  border: 1px solid hsl(var(--color-text));
   &:link,
   &:visited {
-    background-color: hsl(var(--color-gray-80));
+    border: 1px solid var(--color-text);
+    background-color: var(--color-primary-0);
     text-transform: uppercase;
     text-decoration: none;
     padding: 1rem 2rem;

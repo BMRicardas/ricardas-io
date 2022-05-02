@@ -35,24 +35,26 @@ const experiences: Experience[] = [
 
 const ExperienceList: FC = () => {
   return (
-    <Section title="Experience">
-      <ul className={classes["experience-list"]}>
-        {/* <p>{`MONTH${lastDigitIsOne ? "" : "s"}`}</p> */}
-        {experiences.map((item, i) => {
-          return (
-            <ExperienceItem
-              key={i}
-              image={item.image}
-              company={item.company}
-              companyUrl={item.companyUrl}
-              position={item.position}
-              workingFrom={item.workingFrom}
-              workingTo={item.workingTo}
-            />
-          );
-        })}
-      </ul>
-    </Section>
+    <div className={classes.experience}>
+      <Section title="Experience">
+        <ul className={classes["experience__list"]}>
+          {/* <p>{`MONTH${lastDigitIsOne ? "" : "s"}`}</p> */}
+          {experiences.map((item, i) => {
+            return (
+              <ExperienceItem
+                key={i}
+                image={item.image}
+                company={item.company}
+                companyUrl={item.companyUrl}
+                position={item.position}
+                workingFrom={item.workingFrom}
+                workingTo={item.workingTo}
+              />
+            );
+          })}
+        </ul>
+      </Section>
+    </div>
   );
 };
 

@@ -1,14 +1,21 @@
 @import "../../styles/";
 
-.experience-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-items: stretch;
-  gap: 1rem;
+.experience {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-primary-0-a),
+    var(--color-primary-1-a)
+  );
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    gap: 1rem;
 
-  @media only screen and (max-width: $bp-sm) {
-    flex-direction: column;
+    @media only screen and (max-width: $bp-sm) {
+      flex-direction: column;
+    }
   }
 }
