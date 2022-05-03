@@ -2,67 +2,11 @@
   --color-white: #fff;
   --color-text: var(--color-primary-3);
 
-  --color-primary-0: hsl(200, 4%, 85%);
-  --color-primary-1: hsl(203, 3%, 53%);
-  --color-primary-2: hsl(200, 6%, 32%);
-  --color-primary-3: hsl(200, 16%, 11%);
-  --color-primary-4: hsl(198, 48%, 10%);
+  --color-primary-0: hsl(230, 20%, 90%);
+  --color-primary-1: hsl(230, 30%, 80%);
+  --color-primary-2: hsl(230, 45%, 30%);
+  --color-primary-3: hsl(230, 60%, 20%);
+  --color-primary-4: hsl(230, 75%, 20%);
 
-  --color-primary-0-a: hsla(200, 4%, 85%, 95%);
-  --color-primary-1-a: hsla(203, 3%, 53%, 95%);
-
-  --color-primary-h: 0;
-  --color-primary-s: 0%;
-  --color-primary-l: 93%;
-  --color-primary-a: 100%;
-
-  // Lower number = darker color
-  --color-gray-95: hsla(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    95%,
-    var(--color-primary-a)
-  );
-  --color-gray-85: hsla(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    85%,
-    var(--color-primary-a)
-  );
-  --color-gray-80: hsla(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    80%,
-    var(--color-primary-a)
-  );
-  --color-gray-75: hsla(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    75%,
-    var(--color-primary-a)
-  );
-  --color-gray-70: hsla(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    70%,
-    var(--color-primary-a)
-  );
-  --color-gray-65: hsla(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    65%,
-    var(--color-primary-a)
-  );
-  --color-gray-15: hsla(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    15%,
-    var(--color-primary-a)
-  );
-  --color-gray-10: hsla(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    10%,
-    var(--color-primary-a)
-  );
+  --color-primary-0-a: hsla(230, 20%, 90%, 50%);
 }

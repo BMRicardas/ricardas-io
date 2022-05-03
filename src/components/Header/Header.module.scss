@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(
       // to right bottom,
-      var(--color-primary-1-a),
-      var(--color-primary-0-a)
+      var(--color-primary-0-a),
+      var(--color-primary-0)
     ),
-    url(../../assets/images/clay-banks-8q6e5hu3Ilc-unsplash.jpg);
+    url(../../assets/images/debora-pilati-dOG0z4-gqp0-unsplash.jpg);
   background-size: cover;
   background-position: center;
   // clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
