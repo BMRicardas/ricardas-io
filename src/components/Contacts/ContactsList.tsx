@@ -4,6 +4,7 @@ import classes from "./ContactsList.module.scss";
 import logoGitHub from "../../assets/images/git-hub.png";
 import logoEmail from "../../assets/images/email.png";
 import logoLinkedIn from "../../assets/images/linkedin.png";
+import logoFacebook from "../../assets/images/facebook.png";
 
 interface Contact {
   url: string;
@@ -18,14 +19,19 @@ const contacts: Contact[] = [
     alt: "My Github Page",
   },
   {
+    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
+    logoUrl: logoLinkedIn,
+    alt: "My LinkedIn Page",
+  },
+  {
     url: "mailto:Ricardas.Brazdzius@gmail.com",
     logoUrl: logoEmail,
     alt: "My Email",
   },
   {
-    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
-    logoUrl: logoLinkedIn,
-    alt: "My LinkedIn Page",
+    url: "https://www.facebook.com/ricardas.brazdzius/",
+    logoUrl: logoFacebook,
+    alt: "My Facebook Page",
   },
 ];
 
