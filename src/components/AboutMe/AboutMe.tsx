@@ -17,9 +17,7 @@ const AboutMe: FC = () => {
             </p>
           </div>
           <div className={classes["about-me__main--col"]}>
-            <h3 className={classes["about-me__heading-tertiary"]}>
-              I know how to use
-            </h3>
+            <h3 className={classes["about-me__heading-tertiary"]}>I use</h3>
             <TechList />
           </div>
         </div>
