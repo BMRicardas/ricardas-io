@@ -1,0 +1,20 @@
+.tech-item {
+  text-align: center;
+  min-width: 10rem;
+  transition: all 0.3s;
+  padding: 0.5rem;
+
+  &__img {
+    width: 5rem;
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-default-hover-sm);
+    border-radius: var(--default-border-radius);
+  }
+}

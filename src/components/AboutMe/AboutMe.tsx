@@ -1,37 +1,7 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Section from "../../ui/Section/Section";
+import TechList from "../Tech/TechList";
 import classes from "./AboutMe.module.scss";
-
-const technologies = [
-  {
-    tech: "HTML",
-    icon: "",
-  },
-  {
-    tech: "CSS",
-    icon: "",
-  },
-  {
-    tech: "JavaScript",
-    icon: "",
-  },
-  {
-    tech: "React",
-    icon: "",
-  },
-  {
-    tech: "Typescript",
-    icon: "",
-  },
-  {
-    tech: "SCSS",
-    icon: "",
-  },
-  {
-    tech: "Git",
-    icon: "",
-  },
-];
 
 const AboutMe: FC = () => {
   return (
@@ -47,20 +17,10 @@ const AboutMe: FC = () => {
             </p>
           </div>
           <div className={classes["about-me__main--col"]}>
-            <h3
-              className={`${classes["heading-tertiary"]} ${classes["u-margin-bottom-sm"]} ${classes["u-center-text"]}`}
-            >
+            <h3 className={classes["about-me__heading-tertiary"]}>
               I know how to use
             </h3>
-            <ul>
-              {technologies.map((tech, i) => {
-                return (
-                  <li key={i}>
-                    <img src={tech.icon} alt={tech.tech} />
-                  </li>
-                );
-              })}
-            </ul>
+            <TechList />
           </div>
         </div>
       </Section>

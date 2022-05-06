@@ -1,8 +1,8 @@
-import React from "react";
+import { FC } from "react";
 import ContactsList from "../Contacts/ContactsList";
 import classes from "./Header.module.scss";
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <header className={classes.header}>
       <div className={classes["header__text-box"]}>

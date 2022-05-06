@@ -1,6 +1,8 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Section from "../../ui/Section/Section";
 import ExperienceItem from "./ExperienceItem";
+import logoSourcery from "../../assets/images/sourcery.png";
+import logoRicardas from "../../assets/images/myLogo.png";
 import classes from "./ExperienceList.module.scss";
 
 interface Experience {
@@ -14,20 +16,18 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    image:
-      "https://i.pinimg.com/originals/88/68/df/8868df3962c30e0ba8c14760fa664af8.jpg",
-    company: "Ričardas",
+    image: logoRicardas,
+    company: "Ricardas.io",
     companyUrl: "https://ricardas.io/",
     position: "Freelance",
     workingFrom: "2021.07",
     workingTo: "present",
   },
   {
-    image:
-      "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/kpdztxfchaiqsmiro3kx",
-    company: "Devbridge",
-    companyUrl: "https://www.devbridge.com/",
-    position: "Frontend Developer",
+    image: logoSourcery,
+    company: "Sourcery Academy by Devbridge",
+    companyUrl: "https://sourceryacademy.com/",
+    position: "Front-End Developer",
     workingFrom: "2021.10",
     workingTo: "2022.01",
   },
@@ -38,7 +38,6 @@ const ExperienceList: FC = () => {
     <div className={classes.experience}>
       <Section title="Experience">
         <ul className={classes["experience__list"]}>
-          {/* <p>{`MONTH${lastDigitIsOne ? "" : "s"}`}</p> */}
           {experiences.map((item, i) => {
             return (
               <ExperienceItem

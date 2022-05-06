@@ -1,0 +1,10 @@
+:root {
+  --shadow-default-lg: 0 1.5rem 3rem var(--color-black-transparent);
+
+  // ON HOVER
+  --shadow-default-hover-sm: 0 1rem 2rem var(--color-black-transparent);
+  --shadow-default-hover-lg: 0 2.5rem 6rem var(--color-black-transparent);
+
+  // ON ACTIVE
+  --shadow-default-active-sm: 0 0.5rem 1rem var(--color-black-transparent);
+}

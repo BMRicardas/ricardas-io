@@ -1,7 +1,12 @@
-import React from "react";
+import { FC, ReactNode } from "react";
 import classes from "./Section.module.scss";
 
-const Section = ({ children, title }) => {
+interface Props {
+  children: ReactNode;
+  title: string;
+}
+
+const Section: FC<Props> = ({ children, title }) => {
   return (
     <section className={classes.section}>
       <h2 className={classes["section__title"]}>{title}</h2>

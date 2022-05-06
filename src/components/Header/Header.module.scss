@@ -15,19 +15,23 @@
 
   &__text-box {
     text-align: center;
+
+    > *:not(:last-child) {
+      margin-bottom: 8rem;
+    }
   }
 }
 
 .heading-primary {
   color: var(--color-primary-4);
   text-transform: uppercase;
-  margin-bottom: 2rem;
   font-weight: 500;
+  line-height: 0.85;
 
   &--sup {
     display: block;
     font-size: 5rem;
-    letter-spacing: 3rem;
+    letter-spacing: 0.2rem;
     animation: moveInTop 1s;
     margin-bottom: 3rem;
   }
@@ -35,7 +39,7 @@
   &--main {
     display: block;
     font-size: 5rem;
-    letter-spacing: 1.8rem;
+    letter-spacing: 0.2rem;
     animation: moveInRight 1.5s;
     margin-bottom: 3rem;
   }
@@ -43,7 +47,7 @@
   &--sub {
     display: block;
     font-size: 5rem;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.2rem;
     animation: moveInLeft 1.5s;
     margin-bottom: 3rem;
   }

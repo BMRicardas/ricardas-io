@@ -1,7 +1,13 @@
-import React from "react";
+import { FC } from "react";
 import classes from "./ContactsItem.module.scss";
 
-const ContactsItem = ({ url, logoUrl, alt }) => {
+interface Props {
+  url: string;
+  logoUrl: string;
+  alt: string;
+}
+
+const ContactsItem: FC<Props> = ({ url, logoUrl, alt }) => {
   return (
     <li>
       <a

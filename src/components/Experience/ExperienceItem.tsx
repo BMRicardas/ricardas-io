@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import classes from "./ExperienceItem.module.scss";
 
 interface Props {
@@ -73,15 +73,25 @@ const ExperienceItem: FC<Props> = ({
       rel="noopener noreferrer"
       className={classes.btn}
     >
-      <li className={classes.item}>
-        <img src={image} alt={company} className={classes.image} />
-        <div>
-          <h3>{position}</h3>
-          <hr />
-          <p>
+      <li className={classes["experience-item"]}>
+        <img
+          src={image}
+          alt={company}
+          className={classes["experience-item__image"]}
+        />
+        <div className={classes["experience-item__main"]}>
+          <h3 className={classes["experience-item__tertiary--main"]}>
+            {company}
+          </h3>
+          <h3 className={classes["experience-item__tertiary--sub"]}>
+            {position}
+          </h3>
+          <div className={classes["experience-item__from-to"]}>
             {workingFrom} - {workingTo}
-          </p>
-          <p>{getWorkingDuration(workingFrom, workingTo)}</p>
+          </div>
+          <div className={classes["experience-item__duration"]}>
+            {getWorkingDuration(workingFrom, workingTo)}
+          </div>
         </div>
       </li>
     </a>
