@@ -34,11 +34,11 @@ const technologies: Technology[] = [
     icon: imgReact,
   },
   {
-    tech: "Typescript",
+    tech: "TypeScript",
     icon: imgTs,
   },
   {
-    tech: "SASS",
+    tech: "Sass",
     icon: imgSass,
   },
   {
