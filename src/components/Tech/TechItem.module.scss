@@ -1,8 +1,10 @@
 .tech-item {
   text-align: center;
   min-width: 10rem;
-  transition: all 0.3s;
+  border-radius: var(--default-border-radius);
   padding: 0.5rem;
+  transition: all 0.3s;
+  // transform: scale(0.9);
 
   &__img {
     width: 5rem;
@@ -14,7 +16,21 @@
   }
 
   &:hover {
-    box-shadow: var(--shadow-default-hover-sm);
-    border-radius: var(--default-border-radius);
+    animation: zoomIn 0.3s;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.1);
   }
 }
