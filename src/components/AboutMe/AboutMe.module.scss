@@ -12,6 +12,8 @@
     flex: 1;
     gap: 2rem;
     width: 85%;
+    text-align: justify;
+    text-justify: inter-word;
 
     &--col {
       width: 50%;
@@ -24,7 +26,6 @@
 
       @media only screen and (max-width: $bp-sm) {
         width: 100%;
-        gap: 0.5rem;
       }
     }
 
