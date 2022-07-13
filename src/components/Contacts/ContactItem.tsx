@@ -1,5 +1,5 @@
-import { FC } from "react";
-import classes from "./ContactItem.module.scss";
+import { FC } from 'react';
+import classes from './ContactItem.module.scss';
 
 interface Props {
   url: string;

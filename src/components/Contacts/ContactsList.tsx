@@ -1,10 +1,10 @@
-import { FC } from "react";
-import ContactItem from "./ContactItem";
-import classes from "./ContactsList.module.scss";
-import logoGitHub from "../../assets/images/git-hub.png";
-import logoEmail from "../../assets/images/email.png";
-import logoLinkedIn from "../../assets/images/linkedin.png";
-import logoFacebook from "../../assets/images/facebook.png";
+import { FC } from 'react';
+import ContactItem from './ContactItem';
+import classes from './ContactsList.module.scss';
+import logoGitHub from '../../assets/images/git-hub.png';
+import logoEmail from '../../assets/images/email.png';
+import logoLinkedIn from '../../assets/images/linkedin.png';
+import logoFacebook from '../../assets/images/facebook.png';
 
 interface Contact {
   url: string;
@@ -14,31 +14,31 @@ interface Contact {
 
 const contacts: Contact[] = [
   {
-    url: "https://github.com/BMRicardas",
+    url: 'https://github.com/BMRicardas',
     logoUrl: logoGitHub,
-    alt: "My Github Page",
+    alt: 'My Github Page',
   },
   {
-    url: "https://www.linkedin.com/in/ricardas-brazdzius/",
+    url: 'https://www.linkedin.com/in/ricardas-brazdzius/',
     logoUrl: logoLinkedIn,
-    alt: "My LinkedIn Page",
+    alt: 'My LinkedIn Page',
   },
   {
-    url: "mailto:Ricardas.Brazdzius@gmail.com",
+    url: 'mailto:Ricardas.Brazdzius@gmail.com',
     logoUrl: logoEmail,
-    alt: "My Email",
+    alt: 'My Email',
   },
   {
-    url: "https://www.facebook.com/ricardas.brazdzius/",
+    url: 'https://www.facebook.com/ricardas.brazdzius/',
     logoUrl: logoFacebook,
-    alt: "My Facebook Page",
+    alt: 'My Facebook Page',
   },
 ];
 
 const ContactsList: FC = () => {
   return (
     <div>
-      <ul className={classes["contacts-list"]}>
+      <ul className={classes['contacts-list']}>
         {contacts.map((contact, i) => {
           return (
             <ContactItem

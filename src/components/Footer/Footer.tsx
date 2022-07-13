@@ -1,5 +1,5 @@
-import { FC } from "react";
-import classes from "./Footer.module.scss";
+import { FC } from 'react';
+import classes from './Footer.module.scss';
 
 const Footer: FC = () => {
   const year = new Date();
@@ -7,10 +7,10 @@ const Footer: FC = () => {
 
   return (
     <div className={classes.footer}>
-      ©{" "}
-      <a href="https://ricardas.io" className={classes["footer__link"]}>
+      ©{' '}
+      <a href="https://ricardas.io" className={classes['footer__link']}>
         Ricardas.io
-      </a>{" "}
+      </a>{' '}
       {currentYear}. All Rights Reserved.
     </div>
   );

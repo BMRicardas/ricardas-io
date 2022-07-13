@@ -1,5 +1,5 @@
-import { FC } from "react";
-import classes from "./ExperienceItem.module.scss";
+import { FC } from 'react';
+import classes from './ExperienceItem.module.scss';
 
 interface Props {
   image: string;
@@ -19,7 +19,7 @@ const ExperienceItem: FC<Props> = ({
   workingTo,
 }) => {
   const toDateString = (to: string) => {
-    if (to === "present") {
+    if (to === 'present') {
       const today = new Date();
       const year = today.getFullYear();
       const month = today.getMonth() + 1;
@@ -41,17 +41,16 @@ const ExperienceItem: FC<Props> = ({
   };
 
   const getLabel = (difference: number, lastDigit: number) => {
-    if (difference === 0) {
-      return `${difference} months`;
-    } else if (difference < 0 && lastDigit === 1) {
+    if (difference < 0 && lastDigit === 1) {
       return `Are you sure you worked here for ${difference} month? 🤔`;
-    } else if (difference < 0) {
-      return `Are you sure you worked here for ${difference} months? 🤔`;
-    } else if (lastDigit === 1) {
-      return `${difference} month`;
-    } else {
-      return `${difference} months`;
     }
+    if (difference < 0) {
+      return `Are you sure you worked here for ${difference} months? 🤔`;
+    }
+    if (lastDigit === 1) {
+      return `${difference} month`;
+    }
+    return `${difference} months`;
   };
 
   const getWorkingDuration = (dateFrom: string, dateTo: string) => {
@@ -73,23 +72,23 @@ const ExperienceItem: FC<Props> = ({
       rel="noopener noreferrer"
       className={classes.btn}
     >
-      <li className={classes["experience-item"]}>
+      <li className={classes['experience-item']}>
         <img
           src={image}
           alt={company}
-          className={classes["experience-item__image"]}
+          className={classes['experience-item__image']}
         />
-        <div className={classes["experience-item__main"]}>
-          <h3 className={classes["experience-item__tertiary--main"]}>
+        <div className={classes['experience-item__main']}>
+          <h3 className={classes['experience-item__tertiary--main']}>
             {company}
           </h3>
-          <h3 className={classes["experience-item__tertiary--sub"]}>
+          <h3 className={classes['experience-item__tertiary--sub']}>
             {position}
           </h3>
-          <div className={classes["experience-item__from-to"]}>
+          <div className={classes['experience-item__from-to']}>
             {workingFrom} - {workingTo}
           </div>
-          <div className={classes["experience-item__duration"]}>
+          <div className={classes['experience-item__duration']}>
             {getWorkingDuration(workingFrom, workingTo)}
           </div>
         </div>

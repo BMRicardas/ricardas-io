@@ -1,5 +1,5 @@
-import { FC } from "react";
-import classes from "./ProjectItem.module.scss";
+import { FC } from 'react';
+import classes from './ProjectItem.module.scss';
 
 interface Props {
   image: string;
@@ -10,23 +10,23 @@ interface Props {
 
 const ProjectItem: FC<Props> = ({ image, projectName, gitHub, demo }) => {
   return (
-    <li className={`${classes["project-item"]} ${classes.btn}`}>
+    <li className={`${classes['project-item']} ${classes.btn}`}>
       <img
         src={image}
         alt={projectName}
-        className={classes["project-item__image"]}
+        className={classes['project-item__image']}
       />
-      <div className={classes["project-item__main"]}>
-        <h3 className={classes["project-item__tertiary--main"]}>
+      <div className={classes['project-item__main']}>
+        <h3 className={classes['project-item__tertiary--main']}>
           {projectName}
         </h3>
 
-        <div className={classes["project-item__links"]}>
+        <div className={classes['project-item__links']}>
           <a
             href={gitHub}
             target="_blank"
             rel="noopener noreferrer"
-            className={classes["project-item__link"]}
+            className={classes['project-item__link']}
           >
             GitHub
           </a>
@@ -34,7 +34,7 @@ const ProjectItem: FC<Props> = ({ image, projectName, gitHub, demo }) => {
             href={demo}
             target="_blank"
             rel="noopener noreferrer"
-            className={classes["project-item__link"]}
+            className={classes['project-item__link']}
           >
             Live Demo
           </a>
