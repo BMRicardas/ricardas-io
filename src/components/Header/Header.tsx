@@ -9,7 +9,7 @@ const Header: FC = () => {
         <h1 className={classes['heading-primary']}>
           <span className={classes['heading-primary--sup']}>Hello!</span>
           <span className={classes['heading-primary--main']}>
-            I&#39m Ričardas
+            I&#39;m Ričardas
           </span>
           <span className={classes['heading-primary--sub']}>
             I can develop web
