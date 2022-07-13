@@ -1,5 +1,5 @@
 import { FC } from "react";
-import classes from "./ContactsItem.module.scss";
+import classes from "./ContactItem.module.scss";
 
 interface Props {
   url: string;
@@ -7,7 +7,7 @@ interface Props {
   alt: string;
 }
 
-const ContactsItem: FC<Props> = ({ url, logoUrl, alt }) => {
+const ContactItem: FC<Props> = ({ url, logoUrl, alt }) => {
   return (
     <li>
       <a
@@ -22,4 +22,4 @@ const ContactsItem: FC<Props> = ({ url, logoUrl, alt }) => {
   );
 };
 
-export default ContactsItem;
+export default ContactItem;

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import ContactsItem from "./ContactsItem";
+import ContactItem from "./ContactItem";
 import classes from "./ContactsList.module.scss";
 import logoGitHub from "../../assets/images/git-hub.png";
 import logoEmail from "../../assets/images/email.png";
@@ -41,7 +41,7 @@ const ContactsList: FC = () => {
       <ul className={classes["contacts-list"]}>
         {contacts.map((contact, i) => {
           return (
-            <ContactsItem
+            <ContactItem
               key={i}
               url={contact.url}
               logoUrl={contact.logoUrl}
