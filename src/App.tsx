@@ -3,6 +3,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import ExperienceList from "./components/Experience/ExperienceList";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import ProjectsList from "./components/Projects/ProjectsList";
 import "./styles/index.scss";
 
 const App: FC = () => {
@@ -10,6 +11,7 @@ const App: FC = () => {
     <>
       <Header />
       <AboutMe />
+      <ProjectsList />
       <ExperienceList />
       <Footer />
     </>

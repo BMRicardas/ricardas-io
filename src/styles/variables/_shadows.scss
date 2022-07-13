@@ -7,4 +7,6 @@
 
   // ON ACTIVE
   --shadow-default-active-sm: 0 0.5rem 1rem var(--color-black-transparent);
+  --shadow-default-active-inside-sm: inset 0 0.25rem 0.5rem
+    var(--color-black-transparent);
 }
